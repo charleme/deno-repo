@@ -5,7 +5,7 @@
     "dev:front": "deno task --filter @app/front dev",
     "dev": "deno task dev:back & deno task dev:front"
   },
-  "lint":  {
+  "lint": {
     "rules": {
       "include": ["no-console"]
     }
