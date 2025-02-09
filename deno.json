@@ -1,0 +1,13 @@
+{
+  "workspace": ["./packages/*", "./apps/*"],
+  "tasks": {
+    "dev:back": "deno task --filter @app/back dev",
+    "dev:front": "deno task --filter @app/front dev",
+    "dev": "deno task dev:back & deno task dev:front"
+  },
+  "lint":  {
+    "rules": {
+      "include": ["no-console"]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "name": "@package/db",
+  "exports": "./src/index.ts"
+}

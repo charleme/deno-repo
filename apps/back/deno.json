@@ -1,0 +1,15 @@
+{
+  "name": "@app/back",
+  "exports": "./src/index.ts",
+  "imports": {
+    "hono": "jsr:@hono/hono@^4.6.20"
+  },
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --env-file=../../.env --env-file=../../.env.local --env-file=../../.env.development --env-file=../../.env.development.local main.ts",
+    "start": "deno run --allow-net main.ts --allow-env --env-file=../../.env --env-file=../../.env.local --env-file=../../.env.production --env-file=../../.env.production.local"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}
