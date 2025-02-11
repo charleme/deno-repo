@@ -2,10 +2,11 @@
   "name": "@app/back",
   "exports": "./src/index.ts",
   "imports": {
-    "hono": "jsr:@hono/hono@^4.6.20"
+    "@hono/standard-validator": "npm:@hono/standard-validator@^0.1.2",
+    "hono": "npm:hono@^4.6.20"
   },
   "tasks": {
-    "dev": "deno run --allow-net --allow-env --env-file=../../.env --env-file=../../.env.local --env-file=../../.env.development --env-file=../../.env.development.local main.ts",
+    "dev": "deno run -A --env-file=../../.env --env-file=../../.env.local --env-file=../../.env.development --env-file=../../.env.development.local main.ts",
     "start": "deno run --allow-net main.ts --allow-env --env-file=../../.env --env-file=../../.env.local --env-file=../../.env.production --env-file=../../.env.production.local"
   },
   "compilerOptions": {

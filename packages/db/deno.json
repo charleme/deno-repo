@@ -1,4 +1,7 @@
 {
   "name": "@package/db",
-  "exports": "./src/index.ts"
+  "exports": "./src/index.ts",
+  "imports": {
+    "#prisma/client": "./prisma/client.ts"
+  }
 }

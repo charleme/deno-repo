@@ -5,7 +5,7 @@
     "dev": "deno run -A --node-modules-dir --env-file=../../.env --env-file=../../.env.local --env-file=../../.env.development --env-file=../../.env.development.local npm:vite",
     "build": "deno run -A --node-modules-dir --env-file=../../.env --env-file=../../.env.local --env-file=../../.env.production --env-file=../../.env.production.local npm:vite build",
     "preview": "deno run -A --env-file=../../.env --env-file=../../.env.local --env-file=../../.env.production --env-file=../../.env.production.local --node-modules-dir npm:vite preview",
-    "serve": "deno run --allow-net --allow-read --allow-env dist/ --env-file=../../.env --env-file=../../.env.local --env-file=../../.env.production --env-file=../../.env.production.local jsr:@std/http@1/file-server"
+    "serve": "deno run --allow-net --allow-read --allow-env dist/ --env-file=../../.env --env-file=../../.env.local --env-file=../../.env.production --env-file=../../.env.production.local jsr:@std/http@1/file-server dist/"
   },
   "compilerOptions": {
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
