@@ -4,8 +4,8 @@
     "dev:back": "deno task --filter @app/back dev",
     "dev:front": "deno task --filter @app/front dev",
     "dev": "deno task dev:back & deno task dev:front",
-    "prisma:dev": "deno run -A --node-modules-dir --env-file=.env --env-file=.env.local --env-file=.env.development --env-file=.env.development.local npm:prisma",
-    "prisma:prod": "deno run -A --node-modules-dir --env-file=.env --env-file=.env.local --env-file=.env.production --env-file=.env.production.local npm:prisma"
+    "prisma:dev": "deno run -A --env-file=.env --env-file=.env.local --env-file=.env.development --env-file=.env.development.local npm:prisma",
+    "prisma:prod": "deno run -A --env-file=.env --env-file=.env.local --env-file=.env.production --env-file=.env.production.local npm:prisma"
   },
   "nodeModulesDir": "auto",
   "lint": {
