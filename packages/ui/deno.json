@@ -1,0 +1,4 @@
+{
+  "name": "@package/ui",
+  "exports": "./src/index.ts"
+}
