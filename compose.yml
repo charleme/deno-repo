@@ -13,6 +13,24 @@ services:
       - "${DATABASE_PORT}:5432"
     volumes:
       - database_data:/var/lib/postgresql/data
+    env_file:
+      - .env
+      - .env.local
+  lgtm:
+    container_name: lgtm
+    image: docker.io/grafana/otel-lgtm:0.8.1
+    ports:
+      - "3000:3000"
+      - "4317:4317"
+      - "4318:4318"
+    environment:
+      - GF_PATHS_DATA=/data/grafana
+    volumes:
+      - ./lgtm/grafana:/data/grafana
+      - ./lgtm/prometheus:/data/prometheus
+      - ./lgtm/loki:/data/loki
+    tty: true
+    stdin_open: true
 
 volumes:
   database_data:
