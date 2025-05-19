@@ -3,9 +3,13 @@
   "tasks": {
     "dev:back": "deno task --filter @app/back dev",
     "dev:front": "deno task --filter @app/front dev",
+    "build:front": "deno task --filter @app/front build",
     "dev": "deno task dev:back & deno task dev:front",
     "prisma:dev": "deno run -A --env-file=.env --env-file=.env.local npm:prisma",
     "prisma:prod": "deno run -A --env-file=.env --env-file=.env.local npm:prisma"
+  },
+  "imports": {
+    "@front/": "./apps/front/src/"
   },
   "nodeModulesDir": "auto",
   "lint": {
@@ -13,5 +17,8 @@
       "include": ["no-console"],
       "exclude": ["no-slow-types"]
     }
+  },
+  "fmt": {
+    "exclude": ["lgtm"]
   }
 }

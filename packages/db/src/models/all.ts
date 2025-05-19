@@ -13,6 +13,7 @@ export const allModelExtension = Prisma.defineExtension({
         // deno-lint-ignore no-explicit-any
         return !!(await (context as any).findFirst({ where }));
       },
+
       /**
        * Get the paginated results of a query and the total count of the results
        */

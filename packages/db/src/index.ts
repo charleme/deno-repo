@@ -1,8 +1,8 @@
 import { getEnv } from "@package/env";
 import { allModelExtension } from "./models/all.ts";
 import { userExtension } from "./models/user.ts";
-import { PrismaClient } from "#prisma/client";
 import { dbEnvSchema } from "@package/schema";
+import { PrismaClient } from "#prisma/client";
 
 const env = getEnv(
   dbEnvSchema,
