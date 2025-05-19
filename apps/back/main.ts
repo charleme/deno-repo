@@ -1,7 +1,7 @@
-import { Hono } from "hono";
+import {Hono} from "hono";
 
-import { db } from "@package/db";
-import { sValidator } from "@hono/standard-validator";
+import {db} from "@package/db";
+import {sValidator} from "@hono/standard-validator";
 import {
   createUserBodySchema,
   deleteUserParamSchema,
