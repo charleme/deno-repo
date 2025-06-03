@@ -2,11 +2,16 @@
 
 This is a deno monorepo for web applications with hono and vite-react.
 
+## Requirements
+
+Install deno from https://deno.com/ Install docker from https://www.docker.com/
+
 ## Getting Started
 
-Run `deno task dev`
+Run the following commands:
 
-## Limitations
-
-- Cannot run command in parallel with --recursive
-- Cannot run command with wildcard
+```bash
+docker compose up -d
+deno setup
+deno task dev
+```

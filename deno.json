@@ -5,8 +5,8 @@
     "dev:front": "deno task --filter @app/front dev",
     "build:front": "deno task --filter @app/front build",
     "dev": "deno task dev:back & deno task dev:front",
-    "prisma:dev": "deno run -A --env-file=.env --env-file=.env.local npm:prisma",
-    "prisma:prod": "deno run -A --env-file=.env --env-file=.env.local npm:prisma"
+    "prisma": "deno run -A --env-file=.env --env-file=.env.local npm:prisma",
+    "setup": "deno install && deno task prisma db push && deno task prisma db seed"
   },
   "imports": {
     "@front/": "./apps/front/src/"
