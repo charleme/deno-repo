@@ -5,6 +5,6 @@ export const seed = async () => {
   await seedUser();
 };
 
-seed();
+await seed();
 
 await db.$disconnect();

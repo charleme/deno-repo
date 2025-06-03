@@ -1,5 +1,0 @@
-{
-  "imports": {
-    "@front/": "./apps/front/src/"
-  }
-}

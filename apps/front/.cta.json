@@ -1,0 +1,13 @@
+{
+  "projectName": "front",
+  "mode": "code-router",
+  "typescript": true,
+  "tailwind": true,
+  "packageManager": "deno",
+  "git": false,
+  "version": 1,
+  "framework": "react-cra",
+  "chosenAddOns": [
+    "tanstack-query"
+  ]
+}
